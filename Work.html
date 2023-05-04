@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" href="images/pexels-mati-mango-5952651.jpg" type="image/x-icon" />
+
+    <!-- Lien popups -->
+    <link rel="stylesheet" href="path/to/magnific-popup.css">
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/jquery.magnific-popup.min.js"></script>
+
+    <title>Work</title>
+</head>
+<body style="background-color: #0e0403; font-family: 'Courier Prime', monospace;">
+    
+    <header>
+        <div class="logo">
+            <h1>L.<span>A</span></h1>
+        </div>
+        <div class="humberger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+  
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Work.html">Work</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+
+   <section class="section_work">
+    <div class="Titre">
+        <h1 data-aos="fade-right" data-aos-duration="1800">My <span style="color: #0ef;">works</span></h1>
+        <p data-aos="fade-left" data-aos-duration="1800">Here's my lastet works</p>
+   </div>
+
+     <div class="grid_contenaire_img">
+          <div class="grid_content_img" data-aos="zoom-in" data-aos-duration="1800">
+            <a href="images/img1.jpg" class="image">
+                <img src="images/img1.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img2.jpg" class="image">
+                <img src="images/img2.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img3.jpg" class="image">
+                <img src="images/img3.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img4.jpg" class="image">
+                <img src="images/img4.jpg" alt="card" width="100%" />
+             </a>
+   
+             <a href="images/img4.jpg" class="image">
+                <img src="images/img4.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img4.jpg" class="image">
+                <img src="images/img4.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img4.jpg" class="image">
+                <img src="images/img4.jpg" alt="card" width="100%" />
+             </a>
+
+             <a href="images/img4.jpg" class="image">
+                <img src="images/img4.jpg" alt="card" width="100%" />
+             </a>
+             
+     </div>
+   </section>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      humberger=document.querySelector(".humberger");
+      humberger.onclick= function(){
+        navbar=document.querySelector(".nav-bar");
+        navbar.classList.toggle("active");
+      }
+  </script> 
+
+  <script>
+    $(document).ready(function() {
+   $('.image').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
+  </script>
+</body>
+</html>

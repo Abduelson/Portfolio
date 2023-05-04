@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" href="images/pexels-mati-mango-5952651.jpg" type="image/x-icon" />
+    <title>Service</title>
+</head>
+<body style="background-color: #0e0403; font-family: 'Courier Prime', monospace;">
+
+       <header>
+              <div class="logo">
+                  <h1>L.<span>A</span></h1>
+              </div>
+              <div class="humberger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </div>
+
+              <nav class="nav-bar">
+                  <ul>
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="Service.html">Service</a></li>
+                      <li><a href="Skills.html">Skills</a></li>
+                      <li><a href="Work.html">Work</a></li>
+                      <li><a href="Testimonials.html">Testimonials</a></li>
+                      <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+         </header>
+
+    <section class="section_Service">
+           <div class="Titre">
+                   <h1 data-aos="fade-right" data-aos-duration="1800">What I do?</h1>
+                   <p data-aos="fade-left" data-aos-duration="1800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quas nemo distinctio quidem minus autem recusandae totam 
+                    magnam ex assumenda dolore modi odio ea earum nam molestias
+                     adipisci eligendi, similique sapiente.</p>
+           </div>
+
+           <div class="grid">
+                  <div class="grid_content" data-aos="zoom-in" data-aos-duration="1500">
+                    <i class='bx bxs-data'></i>
+                    <h1>Data Base</h1>
+                    <p>I can help you design and build a custom database
+                         that's optimized for your specific needs. 
+                         I'll work with you to create a scalable, secure, 
+                         and high-performance database architecture that 
+                         meets your requirements.</p>
+                  </div>
+
+                  <div class="grid_content" data-aos="zoom-in" data-aos-duration="1800">
+                    <i class='bx bx-code-alt'></i>
+                    <h1>Front-end</h1>
+                    <p>I can help you design and build a custom database
+                         that's optimized for your specific needs. 
+                         I'll work with you to create a scalable, secure, 
+                         and high-performance database architecture that 
+                         meets your requirements.</p>
+                  </div>
+
+                  <div class="grid_content" data-aos="zoom-in" data-aos-duration="2000">
+                    <i class='bx bxs-dashboard'></i>
+                    <h1>Data Analyst</h1>
+                    <p>I can help you design and build a custom database
+                         that's optimized for your specific needs. 
+                         I'll work with you to create a scalable, secure, 
+                         and high-performance database architecture that 
+                         meets your requirements.</p>
+                  </div>
+           </div>
+    </section>
+
+    <!-- javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+       humberger=document.querySelector(".humberger");
+       humberger.onclick= function(){
+         navbar=document.querySelector(".nav-bar");
+         navbar.classList.toggle("active");
+       }
+   </script> 
+</body>
+</html>

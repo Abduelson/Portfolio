@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="images/pexels-mati-mango-5952651.jpg" type="image/x-icon" />
+    <title>About</title>
+</head>
+<body style="background-color: #0e0403; font-family: 'Courier Prime', monospace; margin-top: 0;">
+
+    <header>
+        <div class="logo">
+            <h1>L.<span>A</span></h1>
+        </div>
+        <div class="humberger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Work.html">Work</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+
+    <section class="About">
+        <div class="About_left" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+            <h1>HI!, I'M <span>Lyvert Abduelson</span></h1>
+             <div class="first_line">
+              <p class="first">My Biographie</p>
+             <div class="line"></div>
+             </div>
+            <p>
+            Front-end developer, Administrateur base de donnee <br />
+            Data Analyst.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nulla, dolorum ducimus? Harum beatae ducimus eligendi eius, 
+            fuga magni illo, dolorum nostrum ipsa aperiam nisi? Sunt aperiam facilis accusamus
+             rerum eveniet!
+            </p>
+        </div>
+        <div class="About_right" class="aos-item" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="Images/pexels-mati-mango-5952651.jpg" alt="">
+        </div>
+ </section>
+
+ <!-- javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+    humberger=document.querySelector(".humberger");
+    humberger.onclick= function(){
+      navbar=document.querySelector(".nav-bar");
+      navbar.classList.toggle("active");
+    }
+</script> 
+</body>
+</html>

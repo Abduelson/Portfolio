@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" href="images/pexels-mati-mango-5952651.jpg" type="image/x-icon" />
+    <title>Contact</title>
+</head>
+<body style="background-color: #0e0403; font-family: 'Courier Prime', monospace;">
+
+   <header>
+      <div class="logo">
+          <h1>L.<span>A</span></h1>
+      </div>
+      <div class="humberger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+          <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="Service.html">Service</a></li>
+              <li><a href="Skills.html">Skills</a></li>
+              <li><a href="Work.html">Work</a></li>
+              <li><a href="Testimonials.html">Testimonials</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+          </ul>
+      </nav>
+ </header>
+
+     <div class="contenaire_contact">
+        <div class="contact_left" data-aos="fade-right" data-aos-duration="1800">
+               <h1>GET IN TOUCH</h1>
+               <p>Feel free to get in touch using the form below. 
+                I'd love to hear from you and learn more about your 
+                project and how I can help.</p>
+        </div>
+        <div class="contact_right" data-aos="fade-left" data-aos-duration="2000">
+             <form action="Email.php" method="POST">
+             <input type="text" name="name" id="nom" placeholder="Your name">
+             <input type="email" name="email" id="email" placeholder="Your email">
+             <input type="text" name="subject" id="subject" placeholder="subject">
+             <textarea id="textarea" name="message" rows="10" cols="30"  placeholder="Your message" style="resize: none; background-color: transparent; padding: 10px; color: white;"></textarea>
+             <input class="input1" type="submit" name="envoie" value="Send message"/>
+             </form>
+        </div>
+     </div>
+     
+     <div class="display">
+      <div class="footer">
+         <p>&copy; Abduelson 2023. All rights Reserved</p>
+      </div>
+      <div class="line1"></div>
+     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      humberger=document.querySelector(".humberger");
+      humberger.onclick= function(){
+        navbar=document.querySelector(".nav-bar");
+        navbar.classList.toggle("active");
+      }
+  </script> 
+</body>
+</html>
